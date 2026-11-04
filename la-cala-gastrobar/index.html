@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="es-ES" data-mode="day">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>La Cala Gastrobar · Comer y tapear en el Puerto Noray, Melilla</title>
+<meta name="description" content="La Cala Gastrobar, en el Puerto Deportivo Noray de Melilla: comida mediterránea al mediodía y tapeo por la noche. Reserva por WhatsApp, Google o teléfono.">
+<meta name="theme-color" content="#F2F6FB" id="theme-color">
+<meta property="og:type" content="restaurant">
+<meta property="og:title" content="La Cala Gastrobar · Puerto Noray, Melilla">
+<meta property="og:description" content="Al mediodía, comer con calma. Por la noche, tapeo.">
+<meta property="og:locale" content="es_ES">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230A0F22'/%3E%3Cpath d='M32 10v32M32 12l16 26H32zM30 16L18 38h12z' fill='%23fff'/%3E%3Cpath d='M12 46h40l-6 8H18z' fill='%23FFB454'/%3E%3C/svg%3E">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Restaurant",
+  "name": "La Cala Gastrobar",
+  "telephone": "+34952678107",
+  "servesCuisine": ["Mediterránea", "Tapas", "Internacional"],
+  "acceptsReservations": true,
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Puerto Deportivo Noray, Local 6",
+    "postalCode": "52004",
+    "addressLocality": "Melilla",
+    "addressCountry": "ES"
+  },
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Wednesday","Thursday","Friday","Saturday","Sunday"],
+      "opens": "12:30",
+      "closes": "16:00"
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday","Wednesday","Thursday","Friday","Saturday"],
+      "opens": "20:30",
+      "closes": "23:59"
+    }
+  ],
+  "hasMenu": "https://1drv.ms/b/c/1eb92535bc94ca1a/EQKzB4IjqaFKu6HOjHISGDAB25W58sJs_lgIh83ht6ZZ-A?e=yrMNt4",
+  "sameAs": [
+    "https://instagram.com/gastrobarlacala",
+    "https://www.facebook.com/Gastrobar-La-Cala"
+  ]
+}
+</script>
+
+<style>
+:root{
+  --display:"Avenir Next Condensed","DIN Condensed","Arial Narrow","Roboto Condensed","Helvetica Neue",Arial,sans-serif;
+  --body:system-ui,-apple-system,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --gutter:clamp(20px,5vw,56px);
+  --max:1120px;
+}
+html[data-mode="day"]{
+  --bg:#F2F6FB;--surface:#E3ECF7;--text:#101B33;--muted:#44506B;--line:rgba(16,27,51,.2);
+  --btn:#101B33;--btn-text:#FFFFFF;--btn-hover:#24346A;--link:#1F3FBF;--accent:#D8452F;
+  --sail:#FFFFFF;--sail2:#DCE6F5;--rig:rgba(16,27,51,.5);--hull:#101B33;--dock:#101B33;--water:#8FB8E2;--refl:.3;
+  --lights:0;--stars:0;--sun:1;--moon:0;--day-sky:1;--night-sky:0;
+}
+html[data-mode="night"]{
+  --bg:#0A0F22;--surface:#131A38;--text:#F2F1EC;--muted:#B4BAD0;--line:rgba(242,241,236,.22);
+  --btn:#FFB454;--btn-text:#0A0F22;--btn-hover:#FFC77A;--link:#FFC77A;--accent:#FF8A65;
+  --sail:#2C3770;--sail2:#1E2750;--rig:rgba(242,241,236,.45);--hull:#04071A;--dock:#04071A;--water:#0E1636;--refl:.5;
+  --lights:1;--stars:1;--sun:0;--moon:1;--day-sky:0;--night-sky:1;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:400 clamp(1rem,.96rem + .2vw,1.125rem)/1.65 var(--body);overflow-x:hidden;transition:background-color .9s ease,color .9s ease}
+svg{display:block;max-width:100%}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--link);outline-offset:3px;border-radius:4px}
+.skip{position:absolute;left:12px;top:-60px;background:var(--btn);color:var(--btn-text);padding:10px 16px;border-radius:8px;font-weight:700;z-index:100;text-decoration:none}
+.skip:focus{top:12px}
+.wrap{width:min(100% - 2*var(--gutter),var(--max));margin-inline:auto}
+h1,h2,h3{font-family:var(--display);margin:0;font-weight:800;letter-spacing:-.01em}
+
+/* Header */
+.top{position:absolute;inset:0 0 auto 0;z-index:20;padding-top:max(14px,env(safe-area-inset-top))}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;gap:16px;min-height:64px}
+.brand{font:800 1.7rem/1 var(--display);text-decoration:none;letter-spacing:.01em;text-transform:uppercase}
+.nav{display:flex;align-items:center;gap:clamp(14px,3vw,34px)}
+.nav a{text-decoration:none;font-size:.98rem;padding:8px 2px;color:var(--text)}
+.nav a:hover{text-decoration:underline;text-underline-offset:5px}
+.nav .btn{color:var(--btn-text)}
+@media (max-width:680px){.nav a:not(.btn){display:none}}
+
+/* Buttons */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:48px;padding:12px 24px;border-radius:10px;font:700 1rem/1.2 var(--body);text-decoration:none;border:2px solid transparent;cursor:pointer;transition:transform .2s,background .3s,color .3s,border-color .3s}
+.btn-main{background:var(--btn);color:var(--btn-text)}
+.btn-main:hover{background:var(--btn-hover);transform:translateY(-2px)}
+.btn-line{border-color:var(--text);color:var(--text);background:transparent}
+.btn-line:hover{transform:translateY(-2px);background:var(--text);color:var(--bg)}
+.btn svg{width:20px;height:20px;flex:none}
+
+/* Hero */
+.hero{position:relative;min-height:100svh;display:flex;align-items:center;isolation:isolate;overflow:hidden;padding:clamp(110px,16vh,150px) 0 clamp(250px,36vh,380px)}
+.hero::after{content:"";position:absolute;left:0;right:0;bottom:0;height:70px;background:linear-gradient(transparent,var(--bg));z-index:-1;transition:background .9s}
+.sky{position:absolute;inset:0;z-index:-4;transition:opacity 1.2s ease}
+.sky-day{background:linear-gradient(180deg,#9FCDF3 0%,#CFE5F8 55%,#F2F6FB 100%);opacity:var(--day-sky)}
+.sky-night{background:linear-gradient(180deg,#05081A 0%,#10173B 60%,#262C63 100%);opacity:var(--night-sky)}
+.scene{position:absolute;left:0;right:0;bottom:0;width:100%;height:clamp(260px,46vh,460px);z-index:-2}
+.orb-sun,.orb-moon,.stars,.lights{transition:opacity 1.2s ease}
+.orb-sun{opacity:var(--sun)}
+.orb-moon{opacity:var(--moon)}
+.stars{opacity:var(--stars)}
+.lights{opacity:var(--lights)}
+.sail{fill:var(--sail);transition:fill .9s}
+.sail2{fill:var(--sail2);transition:fill .9s}
+.rig{stroke:var(--rig);fill:none;stroke-width:1.4;transition:stroke .9s}
+.hull{fill:var(--hull);transition:fill .9s}
+.dock{fill:var(--dock);transition:fill .9s}
+.water{fill:var(--water);transition:fill .9s}
+.refl{opacity:var(--refl);transition:opacity .9s}
+.sway{transform-box:fill-box;transform-origin:50% 100%;animation:sway 7s ease-in-out infinite}
+.sway.b{animation-duration:9s;animation-delay:-2s}
+.sway.c{animation-duration:8s;animation-delay:-4s}
+@keyframes sway{0%,100%{transform:rotate(-1.1deg)}50%{transform:rotate(1.1deg)}}
+.bulb{fill:#FFD08A;animation:tw 3.2s ease-in-out infinite}
+.bulb:nth-child(2n){animation-delay:-1s}
+.bulb:nth-child(3n){animation-delay:-2s}
+@keyframes tw{0%,100%{opacity:1}50%{opacity:.55}}
+.star{fill:#fff;animation:tw 4s ease-in-out infinite}
+.star:nth-child(2n){animation-delay:-1.6s}
+.wire{stroke:rgba(255,255,255,.35);fill:none;stroke-width:1.5}
+
+.hero-copy{max-width:41rem}
+.toggle{display:inline-flex;padding:5px;border-radius:999px;background:var(--surface);border:1px solid var(--line);margin:0 0 28px;transition:background .9s}
+.toggle button{appearance:none;border:0;background:none;color:var(--text);font:700 .98rem/1 var(--body);padding:12px 20px;border-radius:999px;min-height:44px;cursor:pointer;display:inline-flex;align-items:center;gap:8px;transition:background .3s,color .3s}
+.toggle button[aria-pressed="true"]{background:var(--btn);color:var(--btn-text)}
+.toggle svg{width:18px;height:18px}
+h1{font-size:clamp(4.2rem,2rem + 12vw,10.5rem);line-height:.86;text-transform:uppercase;margin:0 0 .12em;letter-spacing:-.02em}
+h1 span{display:block}
+h1 .l2{color:var(--accent);transition:color .9s}
+.tag{margin:0 0 1.8rem;font:700 clamp(1.3rem,1.05rem + 1.3vw,2rem)/1.2 var(--display);max-width:22em}
+.tag small{display:block;margin-top:.5em;font:400 1rem/1.5 var(--body);color:var(--muted);max-width:32em}
+.only-night{display:none}
+html[data-mode="night"] .only-night{display:block}
+html[data-mode="night"] .only-day{display:none}
+.cta-row{display:flex;flex-wrap:wrap;gap:12px}
+.js .rise{opacity:0;transform:translateY(20px)}
+.js.ready .rise{opacity:1;transform:none;transition:opacity .9s ease,transform .9s cubic-bezier(.2,.7,.2,1),background .3s,color .3s;transition-delay:var(--d,0s)}
+@media (max-width:760px){.hero{padding-bottom:230px;align-items:flex-start}}
+
+/* Sections */
+.pad{padding:clamp(64px,10vw,128px) 0}
+h2{font-size:clamp(2.3rem,1.3rem + 4.4vw,4.6rem);line-height:.95;text-transform:uppercase;margin-bottom:.4em;text-wrap:balance}
+.sub{max-width:36em;color:var(--muted);margin:0 0 clamp(28px,4vw,48px)}
+
+.dishes{list-style:none;margin:0;padding:0;columns:2;column-gap:clamp(28px,6vw,96px)}
+.dishes li{break-inside:avoid;padding:18px 0;border-top:1px solid var(--line)}
+.dishes strong{display:block;font:800 clamp(1.4rem,1.1rem + 1.2vw,2rem)/1.15 var(--display);letter-spacing:0}
+.dishes span{color:var(--muted);font-size:.93rem}
+@media (max-width:760px){.dishes{columns:1}}
+.fine{margin:28px 0 0;color:var(--muted);font-size:.92rem;max-width:44em}
+
+.alt{background:var(--surface);transition:background .9s}
+.book{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,6vw,96px);align-items:start}
+.routes{display:grid;gap:14px}
+.route{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 22px;border-radius:14px;border:1px solid var(--line);text-decoration:none;background:var(--bg);transition:transform .2s,border-color .2s,background .9s}
+.route:hover{transform:translateX(6px);border-color:var(--text)}
+.route b{display:block;font:800 1.5rem/1.1 var(--display)}
+.route span{color:var(--muted);font-size:.93rem}
+.route svg{width:26px;height:26px;flex:none}
+.route.main{background:var(--btn);color:var(--btn-text);border-color:var(--btn)}
+.route.main span{color:inherit;opacity:.85}
+@media (max-width:820px){.book{grid-template-columns:1fr}}
+
+.cartas{list-style:none;margin:0;padding:0}
+.cartas li{border-top:1px solid var(--line)}
+.cartas li:last-child{border-bottom:1px solid var(--line)}
+.cartas a{display:flex;justify-content:space-between;gap:16px;padding:18px 0;text-decoration:none;font:800 clamp(1.3rem,1.1rem + 1vw,1.8rem)/1.2 var(--display)}
+.cartas a:hover{color:var(--link)}
+.cartas a span{font:400 .95rem/1.6 var(--body);color:var(--muted);align-self:center;text-align:right}
+
+.proof{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(24px,5vw,72px);margin-top:clamp(24px,4vw,40px)}
+.proof .n{font:800 clamp(3.4rem,2rem + 7vw,7rem)/.9 var(--display);color:var(--accent);transition:color .9s}
+.proof p{margin:.2em 0 0;color:var(--muted);max-width:20em}
+@media (max-width:640px){.proof{grid-template-columns:1fr}}
+
+.visit-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(28px,6vw,96px)}
+address{font-style:normal;font-size:clamp(1.2rem,1.05rem + .8vw,1.6rem);line-height:1.4;margin-bottom:1.2rem}
+.phone{display:inline-block;font:800 clamp(2.2rem,1.4rem + 3vw,3.6rem)/1 var(--display);text-decoration:none}
+.phone:hover{text-decoration:underline;text-underline-offset:6px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:1.4rem 0 0;padding:0;list-style:none}
+.tags li{border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:.92rem}
+table{border-collapse:collapse;width:100%;max-width:28rem}
+caption{text-align:left;font:800 1.7rem/1.2 var(--display);padding-bottom:10px}
+th,td{padding:12px 0;border-top:1px solid var(--line);text-align:left;font-weight:400;vertical-align:top}
+th{font-weight:700;padding-right:18px}
+tr:last-child th,tr:last-child td{border-bottom:1px solid var(--line)}
+.hint{color:var(--muted);font-size:.92rem;max-width:28rem;margin:14px 0 0}
+@media (max-width:820px){.visit-grid{grid-template-columns:1fr}}
+.linkline{color:var(--link);font-weight:700;text-underline-offset:5px}
+
+footer{border-top:1px solid var(--line);padding:32px 0 calc(32px + 72px);color:var(--muted);font-size:.92rem}
+footer .wrap{display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:space-between}
+footer p{margin:0;max-width:44em}
+
+.bar{display:none}
+@media (max-width:680px){
+  .bar{display:grid;grid-template-columns:1fr 1fr;gap:10px;position:fixed;inset:auto 0 0 0;z-index:30;padding:10px var(--gutter) max(10px,env(safe-area-inset-bottom));background:var(--bg);border-top:1px solid var(--line)}
+  .bar .btn{min-height:52px;padding:10px 12px}
+}
+
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .js .rise{opacity:1;transform:none}
+}
+</style>
+</head>
+<body>
+<a class="skip" href="#contenido">Saltar al contenido</a>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#inicio" aria-label="La Cala Gastrobar, inicio">La Cala</a>
+    <nav class="nav" aria-label="Principal">
+      <a href="#carta">Carta</a>
+      <a href="#reservar">Reservar</a>
+      <a href="#visita">Horario</a>
+      <a class="btn btn-main" href="https://wa.me/34650346189?text=Hola%2C%20quer%C3%ADa%20reservar%20mesa%20en%20La%20Cala" target="_blank" rel="noopener">WhatsApp</a>
+    </nav>
+  </div>
+</header>
+
+<main id="contenido">
+<section class="hero" id="inicio">
+  <div class="sky sky-day" aria-hidden="true"></div>
+  <div class="sky sky-night" aria-hidden="true"></div>
+
+  <svg class="scene" viewBox="0 0 1200 520" preserveAspectRatio="xMidYMax slice" aria-hidden="true" focusable="false">
+    <defs>
+      <mask id="cres"><rect width="1200" height="520" fill="#fff"/><circle cx="946" cy="104" r="38" fill="#000"/></mask>
+      <radialGradient id="sunglow"><stop offset="0" stop-color="#FFF3C4"/><stop offset="1" stop-color="#FFD76A"/></radialGradient>
+      <g id="boat">
+        <path class="hull" d="M-62 0H62L48 20H-48z"/>
+        <path class="sail" d="M3 -168V-22H62z"/>
+        <path class="sail2" d="M-3 -150V-22H-50z"/>
+        <path class="rig" d="M0 -176V0M0 -176L-62 0M0 -176L62 0"/>
+      </g>
+      <g id="fleet">
+        <g transform="translate(120 330) scale(.9)"><use class="sway" href="#boat"/></g>
+        <g transform="translate(340 330) scale(1.1)"><use class="sway b" href="#boat"/></g>
+        <g transform="translate(580 330) scale(.78)"><use class="sway c" href="#boat"/></g>
+        <g transform="translate(800 330) scale(1.15)"><use class="sway" href="#boat"/></g>
+        <g transform="translate(1050 330) scale(.95)"><use class="sway b" href="#boat"/></g>
+      </g>
+    </defs>
+
+    <g class="stars">
+      <circle class="star" cx="80" cy="40" r="1.6"/><circle class="star" cx="210" cy="90" r="1.2"/><circle class="star" cx="330" cy="30" r="1.8"/>
+      <circle class="star" cx="470" cy="80" r="1.3"/><circle class="star" cx="600" cy="26" r="1.6"/><circle class="star" cx="720" cy="70" r="1.2"/>
+      <circle class="star" cx="1040" cy="44" r="1.7"/><circle class="star" cx="1130" cy="96" r="1.3"/><circle class="star" cx="860" cy="30" r="1.2"/>
+    </g>
+    <g class="orb-sun"><circle cx="930" cy="120" r="64" fill="#FFE9A0" opacity=".45"/><circle cx="930" cy="120" r="44" fill="url(#sunglow)"/></g>
+    <g class="orb-moon"><circle cx="930" cy="120" r="44" fill="#E9ECF7" mask="url(#cres)"/></g>
+
+    <rect class="water" x="0" y="350" width="1200" height="170"/>
+    <g class="refl" transform="translate(0 700) scale(1 -1)"><use href="#fleet"/></g>
+    <use href="#fleet"/>
+    <rect class="dock" x="0" y="326" width="1200" height="8"/>
+    <rect class="dock" x="0" y="350" width="1200" height="2" opacity=".5"/>
+
+    <g class="lights">
+      <path class="wire" d="M0 170Q300 270 600 170T1200 170"/>
+      <circle class="bulb" cx="60" cy="188" r="5"/><circle class="bulb" cx="180" cy="212" r="5"/><circle class="bulb" cx="300" cy="220" r="5"/>
+      <circle class="bulb" cx="420" cy="212" r="5"/><circle class="bulb" cx="540" cy="188" r="5"/><circle class="bulb" cx="660" cy="152" r="5"/>
+      <circle class="bulb" cx="780" cy="128" r="5"/><circle class="bulb" cx="900" cy="120" r="5"/><circle class="bulb" cx="1020" cy="128" r="5"/>
+      <circle class="bulb" cx="1140" cy="152" r="5"/>
+    </g>
+  </svg>
+
+  <div class="wrap">
+    <div class="hero-copy">
+      <div class="toggle rise" style="--d:.05s" role="group" aria-label="Elegir momento del día">
+        <button type="button" id="b-day" aria-pressed="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M2 12h2M20 12h2M5 5l1.5 1.5M17.5 17.5L19 19M5 19l1.5-1.5M17.5 6.5L19 5"/></svg>
+          Mediodía
+        </button>
+        <button type="button" id="b-night" aria-pressed="false">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 14.5A8 8 0 0 1 9.5 4 8 8 0 1 0 20 14.5z"/></svg>
+          Noche
+        </button>
+      </div>
+      <h1 class="rise" style="--d:.15s"><span>La</span><span class="l2">Cala</span></h1>
+      <p class="tag rise" style="--d:.35s">
+        <span class="only-day">Al mediodía, ven a comer con calma.<small>Carta mediterránea con toques internacionales, en el Puerto Noray. Mesa para comer hasta las 16:00.</small></span>
+        <span class="only-night">Por la noche, disfruta del tapeo.<small>Carta de tapeo solo noches y vino por copas, en el Puerto Noray. De 20:30 a medianoche.</small></span>
+      </p>
+      <div class="cta-row rise" style="--d:.5s">
+        <a class="btn btn-main" href="https://wa.me/34650346189?text=Hola%2C%20quer%C3%ADa%20reservar%20mesa%20en%20La%20Cala" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 21l1.6-4.7A8.5 8.5 0 1 1 8 19.5z"/><path d="M9 10c.5 2 2.5 4 5 5l1.5-1.5-2-1-1 .8c-.8-.4-1.6-1.2-2-2l.8-1-1-2z"/></svg>
+          Reservar por WhatsApp
+        </a>
+        <a class="btn btn-line" href="#carta">Ver la carta</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="pad" id="carta">
+  <div class="wrap">
+    <h2>Platos que se repiten</h2>
+    <p class="sub">Aparecen en su carta o en las opiniones de sus clientes. La carta cambia: mira siempre la vigente.</p>
+    <ul class="dishes">
+      <li><strong>Bacalao en tempura o carbonizado</strong><span>Muy mencionado por sus clientes</span></li>
+      <li><strong>Minihamburguesa</strong><span>Favorita de varios clientes</span></li>
+      <li><strong>Foie con mango caramelizado</strong><span>Entre lo que más elogian</span></li>
+      <li><strong>Sepia con salsa de langostinos</strong><span>En su carta</span></li>
+      <li><strong>Ensaladilla rusa con tartar de atún</strong><span>En su carta</span></li>
+      <li><strong>Tosta de salmón marinado, aguacate y caviar de salmón</strong><span>En su carta</span></li>
+      <li><strong>Tortas de Inés Rosales</strong><span>Mencionadas en las opiniones</span></li>
+      <li><strong>Mousse de mascarpone</strong><span>Postre muy comentado</span></li>
+    </ul>
+    <p class="fine">Hay opciones sin gluten y vegetarianas, según su ficha pública. Si tienes alguna alergia, avísalo al reservar.</p>
+  </div>
+</section>
+
+<section class="alt pad" id="reservar">
+  <div class="wrap book">
+    <div>
+      <h2>Reserva como te vaya mejor</h2>
+      <p class="sub">Tres formas de asegurar mesa, sin descargar nada.</p>
+    </div>
+    <div class="routes">
+      <a class="route main" href="https://wa.me/34650346189?text=Hola%2C%20quer%C3%ADa%20reservar%20mesa%20en%20La%20Cala" target="_blank" rel="noopener">
+        <div><b>WhatsApp</b><span>650 34 61 89 · número de su perfil oficial</span></div>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="route" href="https://www.google.com/maps/reserve/v/dine/c/fG3zrODBGeM?source=pa&amp;hl=es-ES" target="_blank" rel="noopener">
+        <div><b>Reservar en Google</b><span>Elige día y hora en línea</span></div>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+      <a class="route" href="tel:+34952678107">
+        <div><b>Llamar</b><span>952 67 81 07</span></div>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2z"/></svg>
+      </a>
+      <a class="route" href="https://www.ubereats.com/es/store/gastrobar-la-cala/VnVGUqw8TdibnOhdYzFU8Q" target="_blank" rel="noopener">
+        <div><b>A domicilio</b><span>Pide La Cala por Uber Eats</span></div>
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="pad" id="cartas">
+  <div class="wrap">
+    <h2>Las cartas</h2>
+    <p class="sub">Son los PDF oficiales del restaurante.</p>
+    <ul class="cartas">
+      <li><a href="https://1drv.ms/b/c/1eb92535bc94ca1a/EQKzB4IjqaFKu6HOjHISGDAB25W58sJs_lgIh83ht6ZZ-A?e=yrMNt4" target="_blank" rel="noopener">Ven a comer a La Cala <span>Carta de mediodía</span></a></li>
+      <li><a href="https://1drv.ms/b/c/1eb92535bc94ca1a/IQCJep_W_qTIQ7So2gTfYyvWATrUlHdQzJqmSYG10rH0evw?e=bHk2uo" target="_blank" rel="noopener">De tapeo por La Cala <span>Solo noches</span></a></li>
+      <li><a href="https://1drv.ms/b/c/1eb92535bc94ca1a/IQA42hkc5le3R6L147SNrDzZAcJz9PMdiYkzLmUZ-eYWCyc?e=SIEtcE" target="_blank" rel="noopener">Menú Navidad 2026 <span>Temporada</span></a></li>
+      <li><a href="https://1drv.ms/b/c/1eb92535bc94ca1a/IQBLxdTeSXDpQKj9q4QvUG-4AYFm4Wd0bEFS2Wo4QY5cNWU" target="_blank" rel="noopener">Menu in English <span>English</span></a></li>
+      <li><a href="https://1drv.ms/b/c/1eb92535bc94ca1a/IQA5v0tZqPsXTraxLomMzDv_AeNKnyFRPEG0slC-taEfJYQ?e=rccCuG" target="_blank" rel="noopener">Carte en Français <span>Français</span></a></li>
+    </ul>
+  </div>
+</section>
+
+<section class="alt pad" id="opiniones">
+  <div class="wrap">
+    <h2>Mucha gente ya ha pasado por aquí</h2>
+    <div class="proof">
+      <div><div class="n">8,8</div><p>sobre 10, con 1.662 reseñas, según el agregador toppingsandsalads.es.</p></div>
+      <div><div class="n">4,0</div><p>sobre 5 en Tripadvisor, con 144 opiniones.</p></div>
+    </div>
+    <p class="fine">Datos públicos consultados el 1 de noviembre de 2026. Cambian con el tiempo.</p>
+  </div>
+</section>
+
+<section class="pad" id="visita">
+  <div class="wrap visit-grid">
+    <div>
+      <h2>Cómo llegar</h2>
+      <address>Puerto Deportivo Noray, Local 6<br>52004 Melilla</address>
+      <a class="phone" href="tel:+34952678107" aria-label="Llamar al 952 67 81 07">952 67 81 07</a>
+      <ul class="tags">
+        <li>Acceso para movilidad reducida</li>
+        <li>Opciones sin gluten</li>
+        <li>Brunch</li>
+        <li>Vino por copas</li>
+      </ul>
+      <p class="hint">Servicios según su ficha pública y las opiniones de clientes. Confírmalos al reservar.</p>
+      <p style="margin-top:1.4rem"><a class="linkline" href="https://www.google.com/maps/search/?api=1&amp;query=La+Cala+Gastrobar+Puerto+Deportivo+Noray+Melilla" target="_blank" rel="noopener">Abrir en Google Maps</a> · <a class="linkline" href="https://instagram.com/gastrobarlacala" target="_blank" rel="noopener">Instagram</a> · <a class="linkline" href="https://www.facebook.com/Gastrobar-La-Cala" target="_blank" rel="noopener">Facebook</a></p>
+    </div>
+    <div>
+      <table>
+        <caption>Horario</caption>
+        <tbody>
+          <tr><th scope="row">Lunes, miércoles a sábado</th><td>12:30 a 16:00<br>20:30 a 00:00</td></tr>
+          <tr><th scope="row">Domingo</th><td>12:30 a 16:00</td></tr>
+          <tr><th scope="row">Martes</th><td>Cerrado</td></tr>
+        </tbody>
+      </table>
+      <!-- OWNER INPUT: confirmar horario oficial (Tripadvisor indica apertura a las 12:00 y 20:00), martes y festivos. -->
+      <p class="hint">Horario según Google y Tripadvisor. En festivos y fechas señaladas, reserva con antelación.</p>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>Propuesta de diseño creada por TechLab. Es una demostración y no la web oficial de La Cala Gastrobar hasta que su titular la apruebe.</p>
+    <p>Esta página no usa cookies ni servicios de seguimiento.</p>
+  </div>
+</footer>
+
+<div class="bar" role="group" aria-label="Acciones rápidas">
+  <a class="btn btn-main" href="https://wa.me/34650346189?text=Hola%2C%20quer%C3%ADa%20reservar%20mesa%20en%20La%20Cala" target="_blank" rel="noopener">WhatsApp</a>
+  <a class="btn btn-line" href="tel:+34952678107">Llamar</a>
+</div>
+
+<script>
+(function(){
+  var root=document.documentElement;
+  root.classList.add('js');
+  function start(){root.classList.add('ready');}
+  if(document.readyState==='complete'){start();}else{window.addEventListener('load',start);}
+  setTimeout(start,2500);
+
+  var bDay=document.getElementById('b-day'),bNight=document.getElementById('b-night'),meta=document.getElementById('theme-color');
+  function setMode(m){
+    root.setAttribute('data-mode',m);
+    bDay.setAttribute('aria-pressed',m==='day');
+    bNight.setAttribute('aria-pressed',m==='night');
+    meta.setAttribute('content',m==='day'?'#F2F6FB':'#0A0F22');
+  }
+  // Modo inicial según la hora de Melilla (Europe/Madrid): de día de 7:00 a 19:00
+  var h=12;
+  try{
+    h=parseInt(new Intl.DateTimeFormat('es-ES',{timeZone:'Europe/Madrid',hour:'numeric',hour12:false}).format(new Date()),10)%24;
+  }catch(e){}
+  setMode(h>=7&&h<19?'day':'night');
+  bDay.addEventListener('click',function(){setMode('day');});
+  bNight.addEventListener('click',function(){setMode('night');});
+})();
+</script>
+</body>
+</html>
